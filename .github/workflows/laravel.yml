@@ -10,12 +10,10 @@ jobs:
   laravel-tests:
 
     runs-on: ubuntu-latest
-
-  ##laravel deploayment
     steps:
-      - uses: actions/checkout@v2
-      - with:
-          php-version: 7.4
+      - name: Get latest code
+        uses: actions/checkout@v2
+
       - name: install composer dependencies
         run: composer update
       - name: generate key
