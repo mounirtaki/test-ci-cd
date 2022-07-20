@@ -20,5 +20,4 @@ jobs:
           ssh-disable-host-key-checking: true
       - name: test on the server
         run:
-          cd /var/www/testgit
-          mkdir testcd
+          mkdir /var/www/testgit/ddddd
